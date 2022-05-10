@@ -1,0 +1,173 @@
+$color1: lightblue;
+$color2: black;
+$color3: white;
+$color4: #658DE3;
+$color5: #000000c4;
+
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Encabezado*/
+header{
+    background-color: $color1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+    padding: 50px;
+}
+.logo-encabezado{
+    width: 10%;
+}
+.logo{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*Título*/
+h1{
+    font-weight: 600;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: $color3;
+    }
+    a:hover{
+        color: $color2;
+    }
+}
+
+/*Menú*/
+nav ul{
+    display: flex;
+    gap: 30px;
+    margin: 10px;
+    li{
+        list-style: none;
+        font-size: 20px;
+        font-weight: 600;
+        a{
+            text-decoration: none;
+            color: $color3;
+        }
+        a:hover{
+            color: $color2;
+        }
+    }
+}
+.activo{
+    color: $color4;
+}
+
+/*Main*/
+main{
+    height: 200vh;
+    width: 100%;
+}
+.seccion{
+    background-color: $color1;
+    height: 50px;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    color: $color3;
+    font-size: 30px;
+}
+.seccion2{
+    background-color: $color1;
+    height: 100px;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    color: $color3;
+    font-size: 30px;
+}
+
+/*Pie de página*/
+footer{
+    height: 75px;
+    width: 100%;
+    padding: 20px;
+    background-color: $color1;
+    text-align: center;
+    letter-spacing: 5px;
+    a{
+        text-decoration: none;
+        color: $color3;
+        display: inline-block;
+        i{
+            font-size: 35px;
+            color: $color3;
+        }
+    }
+    a:hover{
+        color: $color4;
+    }
+}
+.whatsapp{
+    height: 44px;
+    width: 44px;
+    font-size: 27px;
+    background-color: $color1;
+    color: $color3;
+    border: 3px solid $color3;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px grey;
+}
+
+/*INICIO*/
+.home{
+    background-image: url(img/Fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.sec{
+    width: 80%;
+    margin: auto;
+}
+.carousel-caption h3, .carousel-caption p{
+    background: $color5;
+    box-shadow: -5px 0 0 0 $color5, 10px 0 0 0 $color5;
+}
+.enlaces{
+    height: 200px;
+    width: 90%;
+    margin-top: 40px;
+    margin-left: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    grid-column-gap: 4%;
+    grid-row-gap: 10%;
+    justify-content: center;
+    align-content: flex-start;
+    a{
+        text-decoration: none;
+        color: $color3;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        h3{
+            background: $color5;
+            box-shadow: -10px 0 0 0 $color5, 10px 0 0 0 $color5;
+        }
+        img{
+            height: 220px;
+            width: 330px;
+        }
+    }
+}
+.e1:hover, .e2:hover, .e3:hover, .e4:hover, .e5:hover, .e6:hover{
+    transform: scale(1.2);
+}
